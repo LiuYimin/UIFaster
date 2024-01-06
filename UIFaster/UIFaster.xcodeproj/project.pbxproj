@@ -10,12 +10,27 @@
 		8701096A2B29A3B500536B86 /* LMSearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870109692B29A3B500536B86 /* LMSearchVC.swift */; };
 		870109F92B2C93B600536B86 /* ImageBrowser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870109F72B2C93B600536B86 /* ImageBrowser.swift */; };
 		870109FA2B2C93B600536B86 /* ImageBrowser.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 870109F82B2C93B600536B86 /* ImageBrowser.storyboard */; };
+		87116A8C2B43C22B00F19CC0 /* FSPagerViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87116A8B2B43C22B00F19CC0 /* FSPagerViewVC.swift */; };
+		87116A972B43C3A900F19CC0 /* FSPagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87116A8E2B43C3A900F19CC0 /* FSPagerView.swift */; };
+		87116A982B43C3A900F19CC0 /* FSPageViewTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87116A8F2B43C3A900F19CC0 /* FSPageViewTransformer.swift */; };
+		87116A992B43C3A900F19CC0 /* FSPagerViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87116A912B43C3A900F19CC0 /* FSPagerViewCell.swift */; };
+		87116A9A2B43C3A900F19CC0 /* FSPagerViewLayoutAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87116A922B43C3A900F19CC0 /* FSPagerViewLayoutAttributes.swift */; };
+		87116A9B2B43C3A900F19CC0 /* FSPageViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87116A932B43C3A900F19CC0 /* FSPageViewLayout.swift */; };
+		87116A9C2B43C3A900F19CC0 /* FSPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87116A942B43C3A900F19CC0 /* FSPageControl.swift */; };
+		87116A9D2B43C3A900F19CC0 /* FSPagerViewObjcCompat.m in Sources */ = {isa = PBXBuildFile; fileRef = 87116A952B43C3A900F19CC0 /* FSPagerViewObjcCompat.m */; };
+		87116A9E2B43C3A900F19CC0 /* FSPagerCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87116A962B43C3A900F19CC0 /* FSPagerCollectionView.swift */; };
+		87116AA02B43D26600F19CC0 /* CollVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87116A9F2B43D26600F19CC0 /* CollVC.swift */; };
+		87116AA22B43D63800F19CC0 /* CollCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87116AA12B43D63800F19CC0 /* CollCell.swift */; };
+		87116AA42B43D64000F19CC0 /* CollCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87116AA32B43D64000F19CC0 /* CollCell.xib */; };
+		87116AA72B43EB7400F19CC0 /* CommunityImageContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87116AA62B43EB7400F19CC0 /* CommunityImageContainerView.swift */; };
 		871575112B200C6B00F37BEA /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 871575102B200C6B00F37BEA /* IQKeyboardManagerSwift */; };
 		871575152B200E1600F37BEA /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 871575142B200E1600F37BEA /* SnapKit */; };
 		871575172B200E1600F37BEA /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 871575162B200E1600F37BEA /* SnapKit-Dynamic */; };
 		871575882B219B9100F37BEA /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871575872B219B9100F37BEA /* Model.swift */; };
 		874FFA912B257D0B00666F0A /* NormalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874FFA902B257D0B00666F0A /* NormalCell.swift */; };
 		874FFA932B257D2B00666F0A /* NormalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 874FFA922B257D2B00666F0A /* NormalCell.xib */; };
+		87709C632B48050100C9E5D0 /* CustomCollectionViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87709C622B48050100C9E5D0 /* CustomCollectionViewVC.swift */; };
+		87709C652B48063700C9E5D0 /* CenterFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87709C642B48063600C9E5D0 /* CenterFlowLayout.swift */; };
 		87C7FB552B1EBB4500067F99 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C7FB542B1EBB4500067F99 /* AppDelegate.swift */; };
 		87C7FB572B1EBB4500067F99 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C7FB562B1EBB4500067F99 /* SceneDelegate.swift */; };
 		87C7FB592B1EBB4500067F99 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C7FB582B1EBB4500067F99 /* ViewController.swift */; };
@@ -39,9 +54,25 @@
 		870109692B29A3B500536B86 /* LMSearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LMSearchVC.swift; sourceTree = "<group>"; };
 		870109F72B2C93B600536B86 /* ImageBrowser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageBrowser.swift; sourceTree = "<group>"; };
 		870109F82B2C93B600536B86 /* ImageBrowser.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ImageBrowser.storyboard; sourceTree = "<group>"; };
+		87116A8B2B43C22B00F19CC0 /* FSPagerViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSPagerViewVC.swift; sourceTree = "<group>"; };
+		87116A8E2B43C3A900F19CC0 /* FSPagerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSPagerView.swift; sourceTree = "<group>"; };
+		87116A8F2B43C3A900F19CC0 /* FSPageViewTransformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSPageViewTransformer.swift; sourceTree = "<group>"; };
+		87116A902B43C3A900F19CC0 /* FSPagerViewObjcCompat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSPagerViewObjcCompat.h; sourceTree = "<group>"; };
+		87116A912B43C3A900F19CC0 /* FSPagerViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSPagerViewCell.swift; sourceTree = "<group>"; };
+		87116A922B43C3A900F19CC0 /* FSPagerViewLayoutAttributes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSPagerViewLayoutAttributes.swift; sourceTree = "<group>"; };
+		87116A932B43C3A900F19CC0 /* FSPageViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSPageViewLayout.swift; sourceTree = "<group>"; };
+		87116A942B43C3A900F19CC0 /* FSPageControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSPageControl.swift; sourceTree = "<group>"; };
+		87116A952B43C3A900F19CC0 /* FSPagerViewObjcCompat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSPagerViewObjcCompat.m; sourceTree = "<group>"; };
+		87116A962B43C3A900F19CC0 /* FSPagerCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSPagerCollectionView.swift; sourceTree = "<group>"; };
+		87116A9F2B43D26600F19CC0 /* CollVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollVC.swift; sourceTree = "<group>"; };
+		87116AA12B43D63800F19CC0 /* CollCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollCell.swift; sourceTree = "<group>"; };
+		87116AA32B43D64000F19CC0 /* CollCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollCell.xib; sourceTree = "<group>"; };
+		87116AA62B43EB7400F19CC0 /* CommunityImageContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityImageContainerView.swift; sourceTree = "<group>"; };
 		871575872B219B9100F37BEA /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		874FFA902B257D0B00666F0A /* NormalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalCell.swift; sourceTree = "<group>"; };
 		874FFA922B257D2B00666F0A /* NormalCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NormalCell.xib; sourceTree = "<group>"; };
+		87709C622B48050100C9E5D0 /* CustomCollectionViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewVC.swift; sourceTree = "<group>"; };
+		87709C642B48063600C9E5D0 /* CenterFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterFlowLayout.swift; sourceTree = "<group>"; };
 		87C7FB512B1EBB4500067F99 /* UIFaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIFaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87C7FB542B1EBB4500067F99 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		87C7FB562B1EBB4500067F99 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -100,6 +131,30 @@
 			path = ImageBrowser;
 			sourceTree = "<group>";
 		};
+		87116A8D2B43C3A900F19CC0 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				87116A942B43C3A900F19CC0 /* FSPageControl.swift */,
+				87116A962B43C3A900F19CC0 /* FSPagerCollectionView.swift */,
+				87116A8E2B43C3A900F19CC0 /* FSPagerView.swift */,
+				87116A912B43C3A900F19CC0 /* FSPagerViewCell.swift */,
+				87116A922B43C3A900F19CC0 /* FSPagerViewLayoutAttributes.swift */,
+				87116A902B43C3A900F19CC0 /* FSPagerViewObjcCompat.h */,
+				87116A952B43C3A900F19CC0 /* FSPagerViewObjcCompat.m */,
+				87116A932B43C3A900F19CC0 /* FSPageViewLayout.swift */,
+				87116A8F2B43C3A900F19CC0 /* FSPageViewTransformer.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		87116AA52B43EB2600F19CC0 /* SV */ = {
+			isa = PBXGroup;
+			children = (
+				87116AA62B43EB7400F19CC0 /* CommunityImageContainerView.swift */,
+			);
+			path = SV;
+			sourceTree = "<group>";
+		};
 		87C7FB482B1EBB4500067F99 = {
 			isa = PBXGroup;
 			children = (
@@ -121,12 +176,20 @@
 		87C7FB532B1EBB4500067F99 /* UIFaster */ = {
 			isa = PBXGroup;
 			children = (
+				87116AA52B43EB2600F19CC0 /* SV */,
+				87116A8D2B43C3A900F19CC0 /* Sources */,
 				87FA36752B3AF36F0083F683 /* PropertyWrapper */,
 				870109F62B2C93B600536B86 /* ImageBrowser */,
 				870109682B29A36500536B86 /* Search */,
 				87C7FB542B1EBB4500067F99 /* AppDelegate.swift */,
 				87C7FB562B1EBB4500067F99 /* SceneDelegate.swift */,
 				87C7FB582B1EBB4500067F99 /* ViewController.swift */,
+				87116A9F2B43D26600F19CC0 /* CollVC.swift */,
+				87116AA12B43D63800F19CC0 /* CollCell.swift */,
+				87116AA32B43D64000F19CC0 /* CollCell.xib */,
+				87116A8B2B43C22B00F19CC0 /* FSPagerViewVC.swift */,
+				87709C622B48050100C9E5D0 /* CustomCollectionViewVC.swift */,
+				87709C642B48063600C9E5D0 /* CenterFlowLayout.swift */,
 				874FFA902B257D0B00666F0A /* NormalCell.swift */,
 				874FFA922B257D2B00666F0A /* NormalCell.xib */,
 				871575872B219B9100F37BEA /* Model.swift */,
@@ -240,6 +303,7 @@
 				870109FA2B2C93B600536B86 /* ImageBrowser.storyboard in Resources */,
 				87C7FB612B1EBB4700067F99 /* LaunchScreen.storyboard in Resources */,
 				874FFA932B257D2B00666F0A /* NormalCell.xib in Resources */,
+				87116AA42B43D64000F19CC0 /* CollCell.xib in Resources */,
 				87C7FB5E2B1EBB4700067F99 /* Assets.xcassets in Resources */,
 				87FA36792B3AF5690083F683 /* LMSearchVC.storyboard in Resources */,
 				87C7FB5C2B1EBB4500067F99 /* Main.storyboard in Resources */,
@@ -295,7 +359,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87116A8C2B43C22B00F19CC0 /* FSPagerViewVC.swift in Sources */,
 				87C7FB592B1EBB4500067F99 /* ViewController.swift in Sources */,
+				87116AA72B43EB7400F19CC0 /* CommunityImageContainerView.swift in Sources */,
+				87116A9D2B43C3A900F19CC0 /* FSPagerViewObjcCompat.m in Sources */,
+				87116AA22B43D63800F19CC0 /* CollCell.swift in Sources */,
+				87116A9B2B43C3A900F19CC0 /* FSPageViewLayout.swift in Sources */,
+				87116A992B43C3A900F19CC0 /* FSPagerViewCell.swift in Sources */,
 				8701096A2B29A3B500536B86 /* LMSearchVC.swift in Sources */,
 				87C7FB552B1EBB4500067F99 /* AppDelegate.swift in Sources */,
 				87FA36702B3AEA150083F683 /* LMPreSearchView.swift in Sources */,
@@ -304,9 +374,17 @@
 				87FA367B2B3B1C380083F683 /* UIFontEx.swift in Sources */,
 				87C7FB572B1EBB4500067F99 /* SceneDelegate.swift in Sources */,
 				871575882B219B9100F37BEA /* Model.swift in Sources */,
+				87116A982B43C3A900F19CC0 /* FSPageViewTransformer.swift in Sources */,
+				87116A9C2B43C3A900F19CC0 /* FSPageControl.swift in Sources */,
+				87709C652B48063700C9E5D0 /* CenterFlowLayout.swift in Sources */,
 				87FA36772B3AF36F0083F683 /* UserDefault+Wrapper.swift in Sources */,
+				87116AA02B43D26600F19CC0 /* CollVC.swift in Sources */,
+				87116A972B43C3A900F19CC0 /* FSPagerView.swift in Sources */,
+				87709C632B48050100C9E5D0 /* CustomCollectionViewVC.swift in Sources */,
 				87FA36722B3AEA3A0083F683 /* LMPostSearchView.swift in Sources */,
 				874FFA912B257D0B00666F0A /* NormalCell.swift in Sources */,
+				87116A9E2B43C3A900F19CC0 /* FSPagerCollectionView.swift in Sources */,
+				87116A9A2B43C3A900F19CC0 /* FSPagerViewLayoutAttributes.swift in Sources */,
 				87FA366E2B3AE9B70083F683 /* LMSearchingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
