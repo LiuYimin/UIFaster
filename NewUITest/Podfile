@@ -1,13 +1,15 @@
 # Uncomment the next line to define a global platform for your project
-# platform :ios, '10.0'
+# platform :ios, '9.0'
 
-target 'UIFaster' do
+target 'NewUITest' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
-  # Pods for UIFaster
-#  pod 'GrowingTextView', '0.7.2'
+  # Pods for NewUITest
   pod 'RxSwift', '6.6.0'
   pod 'RxCocoa', '6.6.0'
   pod "RxGesture"
+  pod 'SwiftRichString'
+  pod 'IQKeyboardManagerSwift'
+  pod 'SnapKit'
 end

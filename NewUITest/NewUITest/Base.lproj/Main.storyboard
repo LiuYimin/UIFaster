@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="OuJ-sQ-T25">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Photo ShowVC-->
+        <scene sceneID="ccK-jd-QI0">
+            <objects>
+                <viewController id="OuJ-sQ-T25" customClass="LMPhotoShowVC" customModule="UIFaster" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zVv-ac-3od">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="gqF-me-nbC">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewLayout key="collectionViewLayout" id="DTd-T3-PRg" customClass="WaterFallFlowLayout" customModule="UIFaster" customModuleProvider="target"/>
+                                <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="OuJ-sQ-T25" id="8v8-JZ-k4j"/>
+                                    <outlet property="delegate" destination="OuJ-sQ-T25" id="nWU-oS-DLL"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="fon-4g-6Tu"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="fon-4g-6Tu" firstAttribute="trailing" secondItem="gqF-me-nbC" secondAttribute="trailing" id="Ahd-6d-RGj"/>
+                            <constraint firstItem="gqF-me-nbC" firstAttribute="leading" secondItem="fon-4g-6Tu" secondAttribute="leading" id="HH2-7C-G9M"/>
+                            <constraint firstItem="fon-4g-6Tu" firstAttribute="bottom" secondItem="gqF-me-nbC" secondAttribute="bottom" id="HJ5-xI-tz3"/>
+                            <constraint firstItem="gqF-me-nbC" firstAttribute="top" secondItem="fon-4g-6Tu" secondAttribute="top" id="hgW-Q2-vxd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="gqF-me-nbC" id="Gol-ym-E4m"/>
+                        <outlet property="waterFlowLayout" destination="DTd-T3-PRg" id="a8X-O6-pR7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zKe-fr-UvR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2199" y="2626"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
