@@ -12,4 +12,5 @@ target 'NewUITest' do
   pod 'SwiftRichString'
   pod 'IQKeyboardManagerSwift'
   pod 'SnapKit'
+  pod 'SwiftMessages'
 end

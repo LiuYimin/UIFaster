@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="OuJ-sQ-T25">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="omd-jh-QBz">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -12,7 +12,7 @@
         <!--Photo ShowVC-->
         <scene sceneID="ccK-jd-QI0">
             <objects>
-                <viewController id="OuJ-sQ-T25" customClass="LMPhotoShowVC" customModule="UIFaster" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="OuJ-sQ-T25" customClass="LMPhotoShowVC" customModule="NewUITest" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zVv-ac-3od">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -20,7 +20,7 @@
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="gqF-me-nbC">
                                 <rect key="frame" x="0.0" y="59" width="393" height="759"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <collectionViewLayout key="collectionViewLayout" id="DTd-T3-PRg" customClass="WaterFallFlowLayout" customModule="UIFaster" customModuleProvider="target"/>
+                                <collectionViewLayout key="collectionViewLayout" id="DTd-T3-PRg" customClass="WaterFallFlowLayout" customModule="NewUITest" customModuleProvider="target"/>
                                 <cells/>
                                 <connections>
                                     <outlet property="dataSource" destination="OuJ-sQ-T25" id="8v8-JZ-k4j"/>
@@ -45,6 +45,66 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zKe-fr-UvR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2199" y="2626"/>
+        </scene>
+        <!--MainVC-->
+        <scene sceneID="319-mM-32R">
+            <objects>
+                <viewController storyboardIdentifier="MainVC" id="omd-jh-QBz" customClass="MainVC" customModule="NewUITest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4gB-zi-LDN">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="gWf-MV-A0I">
+                                <rect key="frame" x="0.0" y="59" width="393" height="793"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="omd-jh-QBz" id="2IA-3l-ZNH"/>
+                                    <outlet property="delegate" destination="omd-jh-QBz" id="eMM-83-PHk"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Bgx-6G-r4V"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gWf-MV-A0I" firstAttribute="top" secondItem="Bgx-6G-r4V" secondAttribute="top" id="Tdu-E1-qm1"/>
+                            <constraint firstItem="Bgx-6G-r4V" firstAttribute="trailing" secondItem="gWf-MV-A0I" secondAttribute="trailing" id="dXW-nv-laV"/>
+                            <constraint firstAttribute="bottom" secondItem="gWf-MV-A0I" secondAttribute="bottom" id="oKZ-YC-asX"/>
+                            <constraint firstItem="gWf-MV-A0I" firstAttribute="leading" secondItem="Bgx-6G-r4V" secondAttribute="leading" id="qxB-7e-aH9"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="gWf-MV-A0I" id="cSv-L1-cU2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bZE-1a-56D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2523" y="1949"/>
+        </scene>
+        <!--ContentVC-->
+        <scene sceneID="cbY-Ww-COv">
+            <objects>
+                <viewController storyboardIdentifier="ContentVC" id="HVM-Oa-d41" customClass="ContentVC" customModule="NewUITest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="K97-BX-83g">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aVb-Y5-qwO">
+                                <rect key="frame" x="159" y="262" width="75" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="tapAA:" destination="HVM-Oa-d41" eventType="touchUpInside" id="lZq-db-qwh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="cAT-Zt-YHh"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XpO-19-x9d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2926" y="1272"/>
         </scene>
     </scenes>
     <resources>

@@ -29,6 +29,17 @@ class LMPhotoShowVC: UIViewController, UIGestureRecognizerDelegate {
         let pinchGesture = UIPinchGestureRecognizer(target: self, action: #selector(handlePinch(_:)))
         pinchGesture.delegate = self
         view.addGestureRecognizer(pinchGesture)
+        
+        
+        var arr = [1,2,3,4]
+        for (idx, item) in arr.enumerated() {
+            if item == 3 {
+                arr.remove(at: idx)
+            }
+        }
+        print("BBBB")
+        print(arr)
+        
     }
     
     @objc func handlePinch(_ gesture: UIPinchGestureRecognizer) {
@@ -103,6 +114,8 @@ extension LMPhotoShowVC: UICollectionViewDelegate, UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
+        if let cell = collectionView.cellForItem(at: IndexPath.init(item: 30, section: 0)) as? LMPhotoShowCell {
+            print("OKKK")
+        }
     }
 }
